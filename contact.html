@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<link rel="stylesheet" href="Styles4.css">
+<meta charset="utf-8">
+<title>contact.html</title>
+</head>
+
+<body>
+<h1>My Contact Info
+</h1>
+<!-- Navigation Menu -->
+<nav>  
+	<a href="index.html" onclick="return waveTransition(event)">Home</a> |
+    <a href="about.html" onclick="return waveTransition(event)">About Me</a> |
+    <a href="portfolio.html" onclick="return waveTransition(event)">Portfolio</a> |
+    <a href="contact.html" onclick="return waveTransition(event)">Contact</a> 
+	</nav>
+<h4>School Email: 354233946@educ.dpcdsb.org</h4>
+<!-- Animation -->
+<div class="bubble bubble1"></div>
+<div class="bubble bubble2"></div>
+<div class="bubble bubble3"></div>
+<div class="bubble bubble4"></div>
+<div class="bubble bubble5"></div>
+<div class="bubble bubble6"></div>
+<div class="bubble bubble7"></div>
+<div class="bubble bubble8"></div>
+<div class="bubble bubble9"></div>
+<div class="bubble bubble10"></div>
+<!-- Design -->
+<div class="sand"></div>
+<div class="crab">🦀</div>
+<div class="turtle">🐢</div>
+<div class="swimming-fish">🐠</div>
+<div class="shell">🐚</div>
+<div class="shell2">⭐</div>
+<div class="rock">🪨</div>
+<div class="seaweed1">🌿</div>
+<div class="seaweed2">🌿</div>
+<div class="seaweed3">🌿</div>
+<div class="seaweed4">🌿</div>
+<div class="seaweed5">🌿</div>
+<div class="seaweed6">🌿</div>
+<div class="seaweed7">🌿</div>
+<div class="seaweed8">🌿</div>
+<div class="seaweed9">🌿</div>
+<div class="seaweed10">🌿</div>
+<div class="seaweed11">🌿</div>
+<div class="seaweed12">🌿</div>
+</body>
+	
+<body>
+<!-- Wave Transition -->
+<div id="transition"> <div class="ring ring1"></div>
+    <div class="ring ring2"></div>
+    <div class="ring ring3"></div> 
+	<div class="ring ring4"></div></div>
+	
+<script>
+function waveTransition(event) {event.preventDefault();let link = event.currentTarget.href;setTimeout(() => {document.querySelector(".ring1").classList.add("expand"); }, 0);setTimeout(() => {document.querySelector(".ring2").classList.add("expand");}, 120);setTimeout(() => {document.querySelector(".ring3").classList.add("expand");}, 240);setTimeout(() => {document.querySelector(".ring4") .classList.add("expand");}, 360);setTimeout(() => { window.location.href = link; }, 1400);return false;}
+</script>
+</body>
+</html>
